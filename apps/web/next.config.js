@@ -4,7 +4,7 @@ const nextConfig = {
     return [
       {
         source: "/github",
-        destination: "https://github.com/steven-tey/novel",
+        destination: "https://github.com/jonpol01/novel-rs",
         permanent: true,
       },
       {
@@ -35,7 +35,7 @@ const nextConfig = {
       },
       {
         source: "/feedback",
-        destination: "https://github.com/steven-tey/novel/issues",
+        destination: "https://github.com/jonpol01/novel-rs/issues",
         permanent: true,
       },
       {
@@ -48,4 +48,9 @@ const nextConfig = {
   productionBrowserSourceMaps: true,
 };
 
-module.exports = nextConfig;
+// module.exports = nextConfig;
+module.exports = {
+  // ... rest of the configuration.
+  nextConfig,
+  output: 'standalone',
+}

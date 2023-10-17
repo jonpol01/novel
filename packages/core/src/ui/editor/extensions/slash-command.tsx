@@ -32,6 +32,7 @@ import { Magic } from "@/ui/icons";
 import { getPrevText } from "@/lib/editor";
 import { startImageUpload } from "@/ui/editor/plugins/upload-images";
 import { NovelContext } from "../provider";
+// import download from "downloadjs";
 
 interface CommandItemProps {
   title: string;
@@ -217,6 +218,16 @@ const getSuggestionItems = ({ query }: { query: string }) => {
         input.click();
       },
     },
+    // {
+    //   title: "Save as Markdown file",
+    //   description: "Download your writing.",
+    //   icon: <ArrowDownToLine size={18} />,
+    //   command: ({ editor, range }: CommandProps) => {
+    //     editor.chain().focus().deleteRange(range).run();
+    //     const editorContent = editor.storage.markdown.getMarkdown();
+    //     download(editorContent, 'novel-'+new Date().toLocaleString()+'.md',  "text/plain");
+    //   },
+    // },
   ].filter((item) => {
     if (typeof query === "string" && query.length > 0) {
       const search = query.toLowerCase();
@@ -271,7 +282,7 @@ const CommandList = ({
       }
       editor.chain().focus().deleteRange(range).run();
     },
-    onFinish: (_prompt, completion) => {
+   onFinish: (_prompt, completion) => {
       // highlight the generated text
       editor.commands.setTextSelection({
         from: range.from,

@@ -9,10 +9,10 @@
 
 <p align="center">
   <a href="https://news.ycombinator.com/item?id=36360789"><img src="https://img.shields.io/badge/Hacker%20News-369-%23FF6600" alt="Hacker News"></a>
-  <a href="https://github.com/steven-tey/novel/blob/main/LICENSE">
+  <a href="https://github.com/jonpol01/novel-rs/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/steven-tey/novel?label=license&logo=github&color=f80&logoColor=fff" alt="License" />
   </a>
-  <a href="https://github.com/steven-tey/novel"><img src="https://img.shields.io/github/stars/steven-tey/novel?style=social" alt="Novel.sh's GitHub repo"></a>
+  <a href="https://github.com/jonpol01/novel-rs"><img src="https://img.shields.io/github/stars/steven-tey/novel?style=social" alt="Novel.sh's GitHub repo"></a>
 </p>
 
 <p align="center">
@@ -30,7 +30,7 @@
 
 [Novel](https://novel.sh/) is a Notion-style WYSIWYG editor with AI-powered autocompletions.
 
-https://github.com/steven-tey/novel/assets/28986134/2099877f-4f2b-4b1c-8782-5d803d63be5c
+https://github.com/jonpol01/novel-rs/assets/28986134/2099877f-4f2b-4b1c-8782-5d803d63be5c
 
 <br />
 
@@ -58,18 +58,18 @@ The `Editor` is a React component that takes in the following props:
 | --------------------- | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------- |
 | `completionApi`       | `string`                    | The API route to use for the OpenAI completion API.                                                                                                                                        | `/api/generate`                                                                                                                     |
 | `className`           | `string`                    | Editor container classname.                                                                                                                                                                | `"relative min-h-[500px] w-full max-w-screen-lg border-stone-200 bg-white sm:mb-[calc(20vh)] sm:rounded-lg sm:border sm:shadow-lg"` |
-| `defaultValue`        | `JSONContent` or `string`   | The default value to use for the editor.                                                                                                                                                   | [`defaultEditorContent`](https://github.com/steven-tey/novel/blob/main/packages/core/src/ui/editor/default-content.tsx)             |
-| `extensions`          | `Extension[]`               | A list of extensions to use for the editor, in addition to the [default Novel extensions](https://github.com/steven-tey/novel/blob/main/packages/core/src/ui/editor/extensions/index.tsx). | `[]`                                                                                                                                |
-| `editorProps`         | `EditorProps`               | Props to pass to the underlying Tiptap editor, in addition to the [default Novel editor props](https://github.com/steven-tey/novel/blob/main/packages/core/src/ui/editor/props.ts).        | `{}`                                                                                                                                |
+| `defaultValue`        | `JSONContent` or `string`   | The default value to use for the editor.                                                                                                                                                   | [`defaultEditorContent`](https://github.com/jonpol01/novel-rs/blob/main/packages/core/src/ui/editor/default-content.tsx)             |
+| `extensions`          | `Extension[]`               | A list of extensions to use for the editor, in addition to the [default Novel extensions](https://github.com/jonpol01/novel-rs/blob/main/packages/core/src/ui/editor/extensions/index.tsx). | `[]`                                                                                                                                |
+| `editorProps`         | `EditorProps`               | Props to pass to the underlying Tiptap editor, in addition to the [default Novel editor props](https://github.com/jonpol01/novel-rs/blob/main/packages/core/src/ui/editor/props.ts).        | `{}`                                                                                                                                |
 | `onUpdate`            | `(editor?: Editor) => void` | A callback function that is called whenever the editor is updated.                                                                                                                         | `() => {}`                                                                                                                          |
 | `onDebouncedUpdate`   | `(editor?: Editor) => void` | A callback function that is called whenever the editor is updated, but only after the defined debounce duration.                                                                           | `() => {}`                                                                                                                          |
 | `debounceDuration`    | `number`                    | The duration (in milliseconds) to debounce the `onDebouncedUpdate` callback.                                                                                                               | `750`                                                                                                                               |
 | `storageKey`          | `string`                    | The key to use for storing the editor's value in local storage.                                                                                                                            | `novel__content`                                                                                                                    |
 | `disableLocalStorage` | `boolean`                   | Enabling this option will prevent read/write content from/to local storage.                                                                                                                | `false`                                                                                                                             |
 
-> **Note**: Make sure to define an API endpoint that matches the `completionApi` prop (default is `/api/generate`). This is needed for the AI autocompletions to work. Here's an example: https://github.com/steven-tey/novel/blob/main/apps/web/app/api/generate/route.ts
+> **Note**: Make sure to define an API endpoint that matches the `completionApi` prop (default is `/api/generate`). This is needed for the AI autocompletions to work. Here's an example: https://github.com/jonpol01/novel-rs/blob/main/apps/web/app/api/generate/route.ts
 
-Here's an example application: https://github.com/steven-tey/novella
+Here's an example application: https://github.com/jonpol01/novel-rsla
 
 ## Deploy Your Own
 
@@ -105,7 +105,7 @@ While Novel is built for React, we also have a few community-maintained packages
 
 Thanks to @bennykok, Novel also has a VSCode Extension: https://novel.sh/vscode
 
-https://github.com/steven-tey/novel/assets/28986134/58ebf7e3-cdb3-43df-878b-119e304f7373
+https://github.com/jonpol01/novel-rs/assets/28986134/58ebf7e3-cdb3-43df-878b-119e304f7373
 
 ## Tech Stack
 
@@ -123,10 +123,10 @@ Novel is built on the following stack:
 
 Here's how you can contribute:
 
-- [Open an issue](https://github.com/steven-tey/novel/issues) if you believe you've encountered a bug.
-- Make a [pull request](https://github.com/steven-tey/novel/pull) to add new features/make quality-of-life improvements/fix bugs.
+- [Open an issue](https://github.com/jonpol01/novel-rs/issues) if you believe you've encountered a bug.
+- Make a [pull request](https://github.com/jonpol01/novel-rs/pull) to add new features/make quality-of-life improvements/fix bugs.
 
-<a href="https://github.com/steven-tey/novel/graphs/contributors">
+<a href="https://github.com/jonpol01/novel-rs/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=steven-tey/novel" />
 </a>
 
@@ -136,4 +136,4 @@ Here's how you can contribute:
 
 ## License
 
-Licensed under the [Apache-2.0 license](https://github.com/steven-tey/novel/blob/main/LICENSE.md).
+Licensed under the [Apache-2.0 license](https://github.com/jonpol01/novel-rs/blob/main/LICENSE.md).

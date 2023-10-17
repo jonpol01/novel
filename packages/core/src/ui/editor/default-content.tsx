@@ -15,7 +15,7 @@ export const defaultEditorContent = {
             {
               type: "link",
               attrs: {
-                href: "https://github.com/steven-tey/novel",
+                href: "https://github.com/jonpol01/novel-rs",
                 target: "_blank",
                 class:
                   "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
@@ -170,7 +170,7 @@ export const defaultEditorContent = {
                     {
                       type: "link",
                       attrs: {
-                        href: "https://github.com/steven-tey/novel",
+                        href: "https://github.com/jonpol01/novel-rs",
                         target: "_blank",
                         class:
                           "text-stone-400 underline underline-offset-[3px] hover:text-stone-600 transition-colors cursor-pointer",
